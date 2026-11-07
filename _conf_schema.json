@@ -1,0 +1,30 @@
+{
+  "singing_prefix": {
+    "type": "string",
+    "default": "[singsing]",
+    "description": "唱歌时追加给 TTS Provider 的内部前缀",
+    "hint": "只在 style=sing 时由插件拼接到纯正文之前，不会出现在模型输出、聊天正文或 Record.text 中。"
+  },
+  "tts_timeout_seconds": {
+    "type": "float",
+    "default": 30.0,
+    "description": "TTS 合成超时时间（秒）",
+    "slider": {
+      "min": 1.0,
+      "max": 300.0,
+      "step": 1.0
+    },
+    "hint": "允许 1-300 秒；超出范围会夹紧到边界，非法值回退到 30 秒。实际等待还会被 Core 的 agent_runner.config.misc.tool_call_timeout 压低，并预留 2 秒用于纯文字兜底。"
+  },
+  "max_text_chars": {
+    "type": "int",
+    "default": 1000,
+    "description": "单次语音正文最大字符数",
+    "slider": {
+      "min": 1,
+      "max": 10000,
+      "step": 1
+    },
+    "hint": "允许 1-10000；超出范围会夹紧到边界，非法值回退到 1000。超长正文直接回退为纯文字。"
+  }
+}
