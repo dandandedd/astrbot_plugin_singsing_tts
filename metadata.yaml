@@ -3,10 +3,9 @@ display_name: SingSing 主动语音
 desc: 让 LLM 通过 send_voice 工具主动选择普通语音或唱歌，仅支持 QQ aiocqhttp。
 short_desc: LLM 工具驱动的普通语音与唱歌回复。
 version: 1.0.0
-author: pe853
+author: dandandedd
 astrbot_version: ">=4.29.4,<4.30"
-# 发布到插件市场前，取消注释并填写真实公开仓库地址：
-# repo: https://github.com/<owner>/astrbot_plugin_singsing_tts
+# repo: https://github.com/dandandedd/astrbot_plugin_singsing_tts
 support_platforms:
   - aiocqhttp
 tags:
