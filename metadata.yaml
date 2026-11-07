@@ -5,7 +5,7 @@ short_desc: LLM 工具驱动的普通语音与唱歌回复。
 version: 1.0.0
 author: dandandedd
 astrbot_version: ">=4.29.4,<4.30"
-# repo: https://github.com/dandandedd/astrbot_plugin_singsing_tts
+repo: https://github.com/dandandedd/astrbot_plugin_singsing_tts
 support_platforms:
   - aiocqhttp
 tags:
